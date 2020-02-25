@@ -35,7 +35,7 @@ const createMainWindow = async () => {
 		title: app.name,
 		show: false,
 		width: 600,
-		height: 400
+		height: 800
 	});
 
 	win.on('ready-to-show', () => {
@@ -48,7 +48,9 @@ const createMainWindow = async () => {
 		mainWindow = undefined;
 	});
 
-	await win.loadFile(path.join(__dirname, 'index.html'));
+	await win.loadURL("https://web.cwamp.cn");
+
+	// await win.loadFile(path.join(__dirname, 'index.html'));
 
 	return win;
 };

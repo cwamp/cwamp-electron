@@ -18,11 +18,11 @@ const showPreferences = () => {
 const helpSubmenu = [
 	openUrlMenuItem({
 		label: 'Website',
-		url: 'https://github.com/upcwangying/undefined'
+		url: 'https://github.com/cwamp/cwamp-electron'
 	}),
 	openUrlMenuItem({
 		label: 'Source Code',
-		url: 'https://github.com/upcwangying/undefined'
+		url: 'https://github.com/cwamp/cwamp-electron'
 	}),
 	{
 		label: 'Report an Issue…',
@@ -36,7 +36,7 @@ const helpSubmenu = [
 ${debugInfo()}`;
 
 			openNewGitHubIssue({
-				user: 'upcwangying',
+				user: 'cwamp',
 				repo: 'cwamp-electron',
 				body
 			});
